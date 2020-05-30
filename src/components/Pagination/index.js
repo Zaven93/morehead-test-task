@@ -18,7 +18,7 @@ const Pagination = ({totalUsers, usersPerPage, paginate}) => {
         <ul className='pagination'>
           {pageNumber.map(number => (
             <li className={active === number ? "active-button" : ""} onClick={() => setActive(number)} key={number} >
-              <a onClick={() => paginate(number)} href='!#' className='page-link'>
+              <a onClick={() => paginate(number)} href='!#' className='page'>
                 {number}
               </a>
             </li>
