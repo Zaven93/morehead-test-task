@@ -1,0 +1,28 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #16a085;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+
+        &.active-button {
+            background: darken(#16a085, 10);
+        }
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+            outline: none;
+        }
+    }
+}
